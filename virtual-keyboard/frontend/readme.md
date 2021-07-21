@@ -1,4 +1,4 @@
-# Layout manager (based on frontend-webpack-boilerplate)
+# Virtual keyboard (based on frontend-webpack-boilerplate)
 
 `npm install` or `yarn` to download dependencies
 

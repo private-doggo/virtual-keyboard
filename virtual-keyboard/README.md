@@ -1,7 +1,1 @@
-# Widgets (based on frontend-webpack-boilerplate)
-
-`npm install` or `yarn` to download dependencies
-
-`npm run build` or `yarn build` to build the project locally
-
-`npm run start` or `yarn start` to run project in browser
+In order to test this app out you'll have to manage with nginx or delpoy it on a server (the only one file that has to be on a server side is /server/js-keyboard-layout.js)
