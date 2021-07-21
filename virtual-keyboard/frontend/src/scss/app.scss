@@ -1,0 +1,33 @@
+@import './base/fonts';
+@import './base/mixins';
+@import './base/reset';
+@import './base/vars';
+
+@import '../../../../gridstack/dist/gridstack.min.css'; // GridStack.js styles
+@import './gridstack/gridstack.scss'; // developer styles
+
+body {
+  color: #212529;
+}
+
+.wrapper {
+  max-width: 1142px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */
+}

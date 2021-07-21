@@ -1,0 +1,43 @@
+// global gridstack styles (use separate .scss file to style a particular grid)
+
+.grid-stack {
+  // background: #71baff;
+}
+
+.grid-stack-item-content {
+  // background-color: #ffffff;
+  // border-radius: 3px;
+  // text-align: center;
+  // padding-top: 5px;
+}
+
+// sample code for columns number managment (do not uncomment or delete it, copy this to a separate .scss file and use a variable from /base/_vars.scss)
+
+// .grid-stack>.grid-stack-item {
+
+// COLUMNS number variable to work properly has to be changed in js as well
+
+//   min-width: (100% / $gridstack-columns);
+
+//   @for $i from 1 through $gridstack-columns {
+//     &[gs-w='#{$i}'] {
+//       width: (100% / $gridstack-columns) * $i;
+//     }
+
+//     &[gs-x='#{$i}'] {
+//       left: (100% / $gridstack-columns) * $i;
+//     }
+
+//     &[gs-min-w='#{$i}'] {
+//       min-width: (100% / $gridstack-columns) * $i;
+//     }
+
+//     &[gs-max-w='#{$i}'] {
+//       max-width: (100% / $gridstack-columns) * $i;
+//     }
+//   }
+// }
+
+// custom imports to overwrite global styles
+
+@import './gs-keyboard';

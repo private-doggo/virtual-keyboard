@@ -1,0 +1,89 @@
+// grid-stack and textarea
+.keyboard {
+  // background: rgb(102, 102, 102);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.keyboard__input {
+  flex: 1;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 20px;
+  border: 2px solid rgb(222, 222, 255);
+  border-radius: 25px;
+  font-size: 20px;
+  transition: border 0.15s ease-in;
+}
+
+.input:focus {
+  border: 2px solid rgb(190, 190, 255);
+}
+
+.keyboard__keys {
+}
+
+// grid-stack class
+.keys {
+  // padding: 20px;
+  background: rgb(222, 222, 255);
+}
+
+.key {
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  filter: drop-shadow(0 1px 2px rgb(104, 104, 104));
+  // border: 1px solid black;
+  border-radius: 5px;
+}
+
+.key--darker {
+  background: rgb(200, 200, 255);
+}
+
+.key:active {
+  @extend .key--darker; // change color because it can be used for some keys and thus be of the same color while pressing
+  // filter: none;
+  transition: all 0.05s ease-in;
+}
+
+// js generated classes
+.key__letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.letter {
+  font-size: 4vw;
+}
+
+.grid-stack > .grid-stack-item {
+  min-width: (100% / $COLUMNS-KEYBOARD);
+
+  @for $i from 1 through $COLUMNS-KEYBOARD {
+    &[gs-w='#{$i}'] {
+      width: (100% / $COLUMNS-KEYBOARD) * $i;
+    }
+
+    &[gs-x='#{$i}'] {
+      left: (100% / $COLUMNS-KEYBOARD) * $i;
+    }
+
+    &[gs-min-w='#{$i}'] {
+      min-width: (100% / $COLUMNS-KEYBOARD) * $i;
+    }
+
+    &[gs-max-w='#{$i}'] {
+      max-width: (100% / $COLUMNS-KEYBOARD) * $i;
+    }
+  }
+}
