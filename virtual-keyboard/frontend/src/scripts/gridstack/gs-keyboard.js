@@ -26,7 +26,7 @@ const options = {
   disableResize: true,
 };
 
-const url = '../server/gs-keyboard-layout.json';
+const url = '/gs-keyboard-layout.json';
 let gsParsedData = []; // an array for parsed json gridstack objects
 
 const fetchKeyboardLayout = async () => {
